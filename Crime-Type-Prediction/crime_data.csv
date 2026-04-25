@@ -1,0 +1,65 @@
+<<<<<<< HEAD
+case_id,crime_type,location,date,evidence_type,status,month
+FQ-101,Theft,Mumbai,05-01-2024,CCTV,Open,Jan-24
+FQ-102,Cyber Crime,Delhi,08-01-2024,Logs,Closed,Jan-24
+FQ-103,Assault,Mumbai,12-01-2024,Witness,Open,Jan-24
+FQ-104,Fraud,Pune,15-01-2024,Documents,Open,Jan-24
+FQ-105,Theft,Mumbai,20-01-2024,CCTV,Closed,Jan-24
+FQ-106,Cyber Crime,Bangalore,22-01-2024,Logs,Open,Jan-24
+FQ-107,Assault,Delhi,25-01-2024,Witness,Closed,Jan-24
+FQ-108,Robbery,Pune,02-02-2024,CCTV,Open,Feb-24
+FQ-109,Theft,Bangalore,06-02-2024,CCTV,Open,Feb-24
+FQ-110,Fraud,Mumbai,10-02-2024,Documents,Closed,Feb-24
+FQ-111,Cyber Crime,Mumbai,14-02-2024,Logs,Open,Feb-24
+FQ-112,Assault,Pune,18-02-2024,Witness,Open,Feb-24
+FQ-113,Robbery,Delhi,22-02-2024,CCTV,Closed,Feb-24
+FQ-114,Theft,Mumbai,01-03-2024,CCTV,Open,Mar-24
+FQ-115,Fraud,Bangalore,04-03-2024,Documents,Open,Mar-24
+FQ-116,Cyber Crime,Pune,08-03-2024,Logs,Closed,Mar-24
+FQ-117,Assault,Mumbai,12-03-2024,Witness,Open,Mar-24
+FQ-118,Robbery,Bangalore,16-03-2024,CCTV,Open,Mar-24
+FQ-119,Theft,Delhi,20-03-2024,CCTV,Closed,Mar-24
+FQ-120,Fraud,Mumbai,24-03-2024,Documents,Open,Mar-24
+FQ-121,Cyber Crime,Delhi,02-04-2024,Logs,Open,Apr-24
+FQ-122,Assault,Pune,06-04-2024,Witness,Closed,Apr-24
+FQ-123,Robbery,Mumbai,10-04-2024,CCTV,Open,Apr-24
+FQ-124,Theft,Bangalore,14-04-2024,CCTV,Open,Apr-24
+FQ-125,Fraud,Delhi,18-04-2024,Documents,Closed,Apr-24
+FQ-126,Cyber Crime,Mumbai,22-04-2024,Logs,Open,Apr-24
+FQ-127,Assault,Bangalore,26-04-2024,Witness,Open,Apr-24
+FQ-128,Robbery,Pune,01-05-2024,CCTV,Closed,May-24
+FQ-129,Theft,Mumbai,05-05-2024,CCTV,Open,May-24
+FQ-130,Fraud,Bangalore,09-05-2024,Documents,Open,May-24
+=======
+case_id,crime_type,location,date,evidence_type,status,month
+FQ-101,Theft,Mumbai,05-01-2024,CCTV,Open,Jan-24
+FQ-102,Cyber Crime,Delhi,08-01-2024,Logs,Closed,Jan-24
+FQ-103,Assault,Mumbai,12-01-2024,Witness,Open,Jan-24
+FQ-104,Fraud,Pune,15-01-2024,Documents,Open,Jan-24
+FQ-105,Theft,Mumbai,20-01-2024,CCTV,Closed,Jan-24
+FQ-106,Cyber Crime,Bangalore,22-01-2024,Logs,Open,Jan-24
+FQ-107,Assault,Delhi,25-01-2024,Witness,Closed,Jan-24
+FQ-108,Robbery,Pune,02-02-2024,CCTV,Open,Feb-24
+FQ-109,Theft,Bangalore,06-02-2024,CCTV,Open,Feb-24
+FQ-110,Fraud,Mumbai,10-02-2024,Documents,Closed,Feb-24
+FQ-111,Cyber Crime,Mumbai,14-02-2024,Logs,Open,Feb-24
+FQ-112,Assault,Pune,18-02-2024,Witness,Open,Feb-24
+FQ-113,Robbery,Delhi,22-02-2024,CCTV,Closed,Feb-24
+FQ-114,Theft,Mumbai,01-03-2024,CCTV,Open,Mar-24
+FQ-115,Fraud,Bangalore,04-03-2024,Documents,Open,Mar-24
+FQ-116,Cyber Crime,Pune,08-03-2024,Logs,Closed,Mar-24
+FQ-117,Assault,Mumbai,12-03-2024,Witness,Open,Mar-24
+FQ-118,Robbery,Bangalore,16-03-2024,CCTV,Open,Mar-24
+FQ-119,Theft,Delhi,20-03-2024,CCTV,Closed,Mar-24
+FQ-120,Fraud,Mumbai,24-03-2024,Documents,Open,Mar-24
+FQ-121,Cyber Crime,Delhi,02-04-2024,Logs,Open,Apr-24
+FQ-122,Assault,Pune,06-04-2024,Witness,Closed,Apr-24
+FQ-123,Robbery,Mumbai,10-04-2024,CCTV,Open,Apr-24
+FQ-124,Theft,Bangalore,14-04-2024,CCTV,Open,Apr-24
+FQ-125,Fraud,Delhi,18-04-2024,Documents,Closed,Apr-24
+FQ-126,Cyber Crime,Mumbai,22-04-2024,Logs,Open,Apr-24
+FQ-127,Assault,Bangalore,26-04-2024,Witness,Open,Apr-24
+FQ-128,Robbery,Pune,01-05-2024,CCTV,Closed,May-24
+FQ-129,Theft,Mumbai,05-05-2024,CCTV,Open,May-24
+FQ-130,Fraud,Bangalore,09-05-2024,Documents,Open,May-24
+>>>>>>> d02714f (Initial commit: Crime type prediction using Random forest)
