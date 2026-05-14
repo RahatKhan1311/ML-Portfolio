@@ -12,7 +12,7 @@ Data Science and ML Engineering.
 | [IPL Match Prediction](./IPL-Match-Prediction/) | Predicts IPL match winners | Logistic Regression | 51.9% CV | [🚀 Live App](https://huggingface.co/spaces/Rahat1311/ipl-match-predictor) |
 
 ## Skills
-Python, Pandas, NumPy, Scikit-learn, Matplotlib, Streamlit, Plotly
+Python, MySQL, Power BI, Data Cleaning, Data Visualization, Feature Engineering, Pandas, NumPy, Scikit-learn, Matplotlib, Streamlit, Plotly
 
 ## Connect
 LinkedIn: www.linkedin.com/in/rahatkhan1305
