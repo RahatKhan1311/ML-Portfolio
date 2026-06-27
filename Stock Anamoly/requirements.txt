@@ -1,0 +1,8 @@
+flask
+yfinance
+scikit-learn
+newsapi-python
+groq
+pandas
+plotly
+python-dotenv
