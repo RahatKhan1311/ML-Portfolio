@@ -1,18 +1,30 @@
 # ML Portfolio — Rahat Khan
 
-A collection of Machine Learning projects built while learning 
-Data Science and ML Engineering.
+A collection of Machine Learning and AI projects built while learning Data Science and ML Engineering.
 
 ## Projects
 
-| Project | Description | Model | Score | Live Demo |
+| Project | Description | Tech | Score / Result | Live Demo |
 |---|---|---|---|---|
-| [House Price Prediction](./House-Price-Prediction/) | Predicts California house prices | Random Forest | R2: 0.805 | - |
-| [Crime Type Prediction](./Crime-Type-Prediction/) | Predicts crime type from case data | Random Forest vs LR | 65% | [🚀 Live App](https://forensiq-ml-app-by-rahatkhan.streamlit.app/) |
-| [IPL Match Prediction](./IPL-Match-Prediction/) | Predicts IPL match winners | Logistic Regression | 51.9% CV | [🚀 Live App](https://huggingface.co/spaces/Rahat1311/ipl-match-predictor) |
+| [Stock Anomaly Explainer](./Stock%20Anamoly/) | Detects unusual stock movements and explains them using LLM + news context | Isolation Forest, Groq LLM, NewsAPI, Flask, Chart.js | AI-powered explanations | - |
+| [House Price Prediction](./House-Price-Prediction/) | Predicts California house prices | Random Forest, Scikit-learn | R²: 0.805 | - |
+| [Crime Type Prediction](./Crime-Type-Prediction/) | Predicts crime type from case data | Random Forest vs LR, Streamlit | 65% accuracy | [🚀 Live App](https://forensiq-ml-app-by-rahatkhan.streamlit.app/) |
+| [IPL Match Prediction](./IPL-Match-Prediction/) | Predicts IPL match winners with feature engineering | Logistic Regression, Gradio | 51.9% CV | [🚀 Live App](https://huggingface.co/spaces/Rahat1311/ipl-match-predictor) |
 
 ## Skills
-Python, MySQL, Power BI, Data Cleaning, Data Visualization, Feature Engineering, Pandas, NumPy, Scikit-learn, Matplotlib, Streamlit, Plotly
+
+**ML / AI:** Scikit-learn, Isolation Forest, NLP, LLM Integration, Feature Engineering, EDA
+
+**Data:** Pandas, NumPy, MySQL, Data Cleaning, Statistical Modelling
+
+**Visualisation:** Power BI, Matplotlib, Seaborn, Plotly, Chart.js
+
+**Web / Backend:** Flask, REST APIs, Streamlit, Gradio
+
+**Tools:** Python, Git, GitHub, VS Code, Postman
 
 ## Connect
-LinkedIn: www.linkedin.com/in/rahatkhan1305
+
+- LinkedIn: [linkedin.com/in/rahatkhan1305](https://www.linkedin.com/in/rahatkhan1305)
+- GitHub: [github.com/RahatKhan1311](https://github.com/RahatKhan1311)
+- Email: rahatk1305@gmail.com
