@@ -27,7 +27,7 @@ def analyze():
     # Build chart data
     anomaly_dates_set = set(anomalies.index)
     chart_labels = [str(d.date()) for d in df.index]
-    chart_prices = [round(float(df.loc[d, 'Close']), 2) for d in df.index]
+    chart_prices = [round(float(df['Close'].loc[d].iloc[0] if hasattr(df['Close'].loc[d], 'iloc') else df['Close'].loc[d]), 2) for d in df.index]
     anomaly_indices = [i for i, d in enumerate(df.index) if d in anomaly_dates_set]
     
     results = []
