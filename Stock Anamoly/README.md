@@ -81,6 +81,7 @@ Open `http://127.0.0.1:5000` in your browser.
 - NewsAPI free tier covers only the last 30 days — older anomalies show no headlines
 - News coverage for Indian stocks (NSE/BSE) is limited on NewsAPI
 - Sentiment analysis on headlines uses keyword matching, not a trained model
+- Indian stock tickers (NSE/BSE) work best when running locally. The hosted version may occasionally face Yahoo Finance rate limits for non-US tickers
 
 ## Example Tickers
 
