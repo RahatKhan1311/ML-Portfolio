@@ -10,6 +10,10 @@ An AI-powered web app that detects unusual stock price movements and explains wh
 - Generates a concise AI explanation of the likely cause using **Groq LLM**
 - Displays everything on an interactive price chart with anomaly markers
 
+## Demo
+ 
+![Stock Anomaly Explainer Demo](demo.png)
+
 ## Tech Stack
 
 | Layer | Technology |
