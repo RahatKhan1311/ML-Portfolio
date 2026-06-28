@@ -38,7 +38,7 @@ def analyze():
     for date, row in anomalies.iterrows():
         date_str = str(date.date())
         headlines = news_data.get(date_str, ["No news found"])
-        price_return = float(row['Return'])
+        price_return = float(row['Return'].iloc[0] if hasattr(row['Return'], 'iloc') else row['Return'])
         explanation = explain_anomaly(ticker, date_str, price_return, headlines)
         results.append({
             'date': date_str,
