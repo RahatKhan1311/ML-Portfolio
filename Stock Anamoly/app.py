@@ -35,11 +35,17 @@ def analyze():
     anomaly_dates = anomalies.index.tolist()
     news_data = get_news(ticker, anomaly_dates) # Calls news_fetcher.py once for all anomaly dates at once — more efficient than calling per anomaly.
     
+    volume_series = df['Volume'].squeeze()
+    median_vol = float(volume_series.median())
+
     for date, row in anomalies.iterrows():
         date_str = str(date.date())
-        headlines = news_data.get(date_str, ["No news found"])
+        headlines = news_data.get(date_str) or ["No news found"]    # empty list becomes the UI placeholder
+        real_headlines = [h for h in headlines
+                          if not h.lower().startswith(("no news", "no headlines", "no relevant", "error"))]
         price_return = float(row['Return'].iloc[0] if hasattr(row['Return'], 'iloc') else row['Return'])
-        explanation = explain_anomaly(ticker, date_str, price_return, headlines)
+        vol = float(row['Volume'].iloc[0] if hasattr(row['Volume'], 'iloc') else row['Volume'])
+        explanation = explain_anomaly(ticker, date_str, price_return, real_headlines,volume_ratio=vol / median_vol)
         results.append({
             'date': date_str,
             'return': f"{price_return:.2%}",

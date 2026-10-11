@@ -1,16 +1,25 @@
 from newsapi import NewsApiClient
-from datetime import timedelta
+from datetime import timedelta, date as date_cls
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
 
+FREE_PLAN_DAYS = 29   # NewsAPI free plan only serves roughly the last 30 days
+
 def get_news(ticker, dates):
     api = NewsApiClient(api_key=os.getenv('NEWS_API_KEY'))
-
     results = {}
+    cutoff = date_cls.today() - timedelta(days=FREE_PLAN_DAYS)
 
     for date in dates:
+        key = str(date.date())
+
+        # Too old for the free plan: skip the API call (saves your daily quota)
+        if date.date() - timedelta(days=2) < cutoff:
+            results[key] = []
+            continue
+
         from_date = (date - timedelta(days=2)).strftime('%Y-%m-%d')
         to_date = (date + timedelta(days=2)).strftime('%Y-%m-%d')
 
@@ -23,11 +32,9 @@ def get_news(ticker, dates):
                 sort_by='relevancy',
                 page_size=3
             )
-
-            headlines = [article['title'] for article in response['articles']]
-            results[str(date.date())] = headlines if headlines else ["No relevant news found."]
-
+            results[key] = [a['title'] for a in response['articles']]
         except Exception as e:
-            results[str(date.date())] = ["Error fetching news"]
-    
+            print("NewsAPI error:", repr(e))
+            results[key] = ["Error fetching news"]   # per date, so one failure doesn't stop the rest
+
     return results
